@@ -1,0 +1,8 @@
+---
+
+- name: Delete files that are no longer needed
+  file:
+    path={{item.path}}
+    state=absent
+  with_items:
+    delete_files_removed
