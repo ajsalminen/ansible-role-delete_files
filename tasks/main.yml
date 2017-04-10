@@ -5,4 +5,4 @@
     path={{item.path}}
     state=absent
   with_items:
-    delete_files_removed
+    "{{ delete_files_removed }}"
